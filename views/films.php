@@ -26,31 +26,50 @@
                 <div class="container-fluid" id="container-wrapper">
                     <div class="row">
                         <?php
-                        if (isset($_GET["NewCat"])) {
+                        if (isset($_GET["NewFilm"])) {
                         ?>
                             <div class="col-lg-12">
                                 <!-- Form Basic -->
                                 <div class="card mb-4">
                                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                        <h6 class="m-0 font-weight-bold text-center">Ajouter une nouvelle catégorie</h6>
+                                        <h6 class="m-0 font-weight-bold text-center">Ajouter un nouveau Film</h6>
                                     </div>
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-group ">
-                                                <label for="exampleInputEmail1">Nom de la catégorie</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                    placeholder="Ex:Adulte">
-                                            </div>
-                                            <div class="form-group col-xl-12 col-lg-12 col-md-12  col-sm-12 p-3">
-                                                <div class="row">
-                                                    <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                                                        <a href="Categorie.php" class="form-control btn btn-danger w-100">Annuler</a>
-                                                    </div>
-                                                    <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                                                        <input type="submit" class="form-control btn btn-dark w-100" value="Enregistrer" name="">
+                                            <div class="row">
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                                                    <label for="exampleInputEmail1">Titre du films</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Ex:Fast x">
+                                                </div>
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                                                    <label for="exampleInputEmail1">Description</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Ex:Film de course ...">
+                                                </div>
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                                                    <label for="exampleInputEmail1">Réalisateur</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Ex:Film de course ...">
+                                                </div>
+                                                
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                                                    <label for="exampleInputEmail1">Photo de couverture</label>
+                                                    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Ex:Film de course ...">
+                                                </div>
+                                                <div class="form-group col-xl-12 col-lg-12 col-md-12  col-sm-12 p-3">
+                                                    <div class="row">
+                                                        <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                                                            <a href="films.php" class="form-control btn btn-danger w-100">Annuler</a>
+                                                        </div>
+                                                        <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                                                            <input type="submit" class="form-control btn btn-dark w-100" value="Enregistrer" name="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </form>
                                     </div>
                                 </div>
@@ -63,7 +82,7 @@
                             <div class="col-lg-12">
                                 <!-- Form Basic -->
                                 <div class="card mb-4">
-                                    <a href="Categorie.php?NewCat" class="btn btn-dark w-100">Nouvelle categorie</a>
+                                    <a href="films.php?NewFilm" class="btn btn-dark w-100">Nouveau Film</a>
                                 </div>
                             </div>
                         <?php

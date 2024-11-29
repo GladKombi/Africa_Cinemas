@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="img/logo/logo.png" rel="icon">
-    <title>Categorie</title>
+    <title>Jours</title>
     <?php require_once('style.php') ?>
 </head>
 
@@ -26,25 +26,25 @@
                 <div class="container-fluid" id="container-wrapper">
                     <div class="row">
                         <?php
-                        if (isset($_GET["NewCat"])) {
+                        if (isset($_GET["NewDay"])) {
                         ?>
                             <div class="col-lg-12">
                                 <!-- Form Basic -->
                                 <div class="card mb-4">
                                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                        <h6 class="m-0 font-weight-bold text-center">Ajouter une nouvelle catégorie</h6>
+                                        <h6 class="m-0 font-weight-bold text-center">Ajouter un jour</h6>
                                     </div>
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-group ">
-                                                <label for="exampleInputEmail1">Nom de la catégorie</label>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Jour</label>
                                                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                    placeholder="Ex:Adulte">
+                                                    placeholder="Ex: Lundi">
                                             </div>
                                             <div class="form-group col-xl-12 col-lg-12 col-md-12  col-sm-12 p-3">
                                                 <div class="row">
                                                     <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                                                        <a href="Categorie.php" class="form-control btn btn-danger w-100">Annuler</a>
+                                                        <a href="horaire.php" class="form-control btn btn-danger w-100">Annuler</a>
                                                     </div>
                                                     <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
                                                         <input type="submit" class="form-control btn btn-dark w-100" value="Enregistrer" name="">
@@ -63,7 +63,7 @@
                             <div class="col-lg-12">
                                 <!-- Form Basic -->
                                 <div class="card mb-4">
-                                    <a href="Categorie.php?NewCat" class="btn btn-dark w-100">Nouvelle categorie</a>
+                                    <a href="jours.php?NewDay" class="btn btn-dark w-100">Nouveau jour</a>
                                 </div>
                             </div>
                         <?php
@@ -79,21 +79,21 @@
                         <div class="col-lg-12">
                             <div class="card mb-4">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-dark">Liste des Categories </h6>
+                                    <h6 class="m-0 font-weight-bold text-dark">Liste des jours </h6>
                                 </div>
                                 <div class="table-responsive p-3">
                                     <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                                         <thead class="thead-light">
                                             <tr>
                                                 <th>#</th>
-                                                <th>Nom categorie</th>
+                                                <th>Nom jour</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>N° 1</td>
-                                                <td>Exemple catégorie</td>
+                                                <td>Exemple jours</td>
                                                 <td>
                                                     <a href="Form_film.php?modifier" class="btn btn-dark bi bi-pen-fill"></a>
                                                     <a href="" class="btn btn-danger bi bi-trash2-fill"></a>

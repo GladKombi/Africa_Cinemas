@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="img/logo/logo.png" rel="icon">
-    <title>Categorie</title>
+    <title>Publications</title>
     <?php require_once('style.php') ?>
 </head>
 
@@ -24,76 +24,32 @@
                 <!-- Topbar -->
                 <!-- Container Fluid-->
                 <div class="container-fluid" id="container-wrapper">
-                    <div class="row">
-                        <?php
-                        if (isset($_GET["NewCat"])) {
-                        ?>
-                            <div class="col-lg-12">
-                                <!-- Form Basic -->
-                                <div class="card mb-4">
-                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                        <h6 class="m-0 font-weight-bold text-center">Ajouter une nouvelle catégorie</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-group ">
-                                                <label for="exampleInputEmail1">Nom de la catégorie</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                    placeholder="Ex:Adulte">
-                                            </div>
-                                            <div class="form-group col-xl-12 col-lg-12 col-md-12  col-sm-12 p-3">
-                                                <div class="row">
-                                                    <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                                                        <a href="Categorie.php" class="form-control btn btn-danger w-100">Annuler</a>
-                                                    </div>
-                                                    <div class="form-group col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                                                        <input type="submit" class="form-control btn btn-dark w-100" value="Enregistrer" name="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        <?php
-                        } else {
-                        ?>
-                            <div class="col-lg-12">
-                                <!-- Form Basic -->
-                                <div class="card mb-4">
-                                    <a href="Categorie.php?NewCat" class="btn btn-dark w-100">Nouvelle categorie</a>
-                                </div>
-                            </div>
-                        <?php
-                        }
-                        ?>
-
-
-                        <!--Row-->
-                    </div>
+                    
                     <!-- Row -->
                     <div class="row">
                         <!-- DataTable with Hover -->
                         <div class="col-lg-12">
                             <div class="card mb-4">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-dark">Liste des Categories </h6>
+                                    <h6 class="m-0 font-weight-bold text-dark">Liste des Horaires </h6>
                                 </div>
                                 <div class="table-responsive p-3">
                                     <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                                         <thead class="thead-light">
                                             <tr>
                                                 <th>#</th>
-                                                <th>Nom categorie</th>
+                                                <th>Identité de l'aboné(e)</th>
+                                                <th>Publication</th>
+                                                <th>Commentaire</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>N° 1</td>
-                                                <td>Exemple catégorie</td>
+                                                <td>1</td>
+                                                <td>Exemple Aboné</td>
+                                                <td>Publication 1</td>
+                                                <td>Ex: Commentaire</td>
                                                 <td>
                                                     <a href="Form_film.php?modifier" class="btn btn-dark bi bi-pen-fill"></a>
                                                     <a href="" class="btn btn-danger bi bi-trash2-fill"></a>

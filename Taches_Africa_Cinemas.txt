@@ -1,0 +1,7 @@
+# Taches Africa_Cinemas et affectation
+======================================
+
+1. Lad_77 : Programme, commentaire (Mise à jour);
+2. Eloge Muyisa : Publication, Reservation (Mise à jour);
+3. Eloge Kasoki : Jours, Categorie(Mise à jour);
+4. Laureine : Films, Abonnement (Mise à jour);
