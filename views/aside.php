@@ -9,7 +9,7 @@
         Menu
     </div>
     <li class="nav-item">
-        <a class="nav-link text-dark" href="ui-colors.html">
+        <a class="nav-link text-dark" href="jours.php">
             <i class="fas fa-fw fa-palette"></i>
             <span>Jours de la semaines</span>
         </a>
@@ -22,31 +22,37 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link text-dark" href="charts.html">
+        <a class="nav-link text-dark" href="films.php">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Films</span>
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" href="charts.html">
+        <a class="nav-link text-dark" href="programme.php">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Horaire</span>
+            <span>Programme</span>
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" href="charts.html">
+        <a class="nav-link text-dark" href="Abonees.php">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Abonnement</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="publication.php">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Publications</span>
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" href="charts.html">
+        <a class="nav-link text-dark" href="reservation.php">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Reservations</span>
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" href="charts.html">
+        <a class="nav-link text-dark" href="commentaire.php">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Commentaires</span>
         </a>

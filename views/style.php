@@ -6,3 +6,4 @@
 <link href="../css/ruang-admin.min.css" rel="stylesheet">
 <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../font/bootstrap-icons.css">
+<link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
